@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>chat UA </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="ITA.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <style>
+      body { font-family: "Montserrat";
+      }
+
+      h2,p {
+          color: black;
+      }
+      nav{
+        padding: 1px;
+        color: white;
+        background: #222;
+        font-size: 25px;
+      }
+      .bot{
+        color: white;
+        padding: 10px;
+        background: #222;
+
+      }
+      .bot a{
+        color: red;
+      }
+      .bot p{
+        color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Barra de ícones -->
+    <nav>
+      <h1 style="text-align: center">CHAT UA</h1>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div id="main">
+
+      <!-- Seção sobre o projeto -->
+      <div id="about">
+        <h2>Sobre o ChatUA</h2>
+        <hr style="width:100%">
+        <p>Diante do cenário atual, com uma crescente evolução tecnológica, se faz necessário o
+        uso de algumas ferramentas automatizada para poderem auxiliar o ser humano com suas
+        problemáticas mais frequentes, o uso da tecnologia de chatbot no objetivo de sanar
+        dúvidas frequentes dos seus usuários, pode contribuir tanto para uma melhor do cliente
+        de uma determinada empresa quanto para sua equipe de atendimento que poderá
+        trabalhar com atividades mais estratégicas e menos repetitivas. O objetivo do projeto é o
+        uso dessa tecnologia na UniAteneu para poder ser analisado se essa ferramenta
+        realmente pode facilitar a vida dos alunos, principalmente os novatos.</p>
+      <!--Fim da seção sobre o projeto  -->
+      </div>
+
+      <h2>Atendimento</h2>
+      <div class="bot">
+        <hr style="width:100%">
+        <h3>Escolha uma opção:</h3>
+        <p>1 - Notas e Faltas</p>
+        <p>2 - Financeiro e renegociação</p>
+        <p>3 - Horários e dias de aulas</p>
+        <p>4 - Calendario e Eventos do Semestre</p>
+        <p>5 - Emissão de declaração de matrícula e bolsistas (prouni) e outros documentos</p>
+        <p>6 - Rematrícula</p>
+        <p>7 - Grade Curricular</p>
+        <p>8 - Numero de atendimento Ateneu</p>
+        <p>9 - Sair</p>
+
+        <form action="/enviar">
+        escolha: <input type="text" name="escolha">
+          <button type="submit"> Enviar </button>
+        </form>
+        <br>
+        <a href="{{link}}"> {{msg}}</a>
+        <br>
+        <br>
+        <a href="{{link1}}">{{msg1}}</a>
+        <br>
+        <hr style="width:100%">
+      </div>
+      <!-- Seção sobre a equipe -->
+      <div id="contact">
+        <h2>Equipe</h2>
+        <div>
+          <p>Afonso Sampaio Da Cruz Neto</p>
+          <p>Ezequiel Barbosa Melo</p>
+          <p>Francisco Otavio Alves de Lima</p>
+          <p>Pedro Paulo Rocha alcântara</p>
+          <p>Ruan Ribeiro Oliveira</p>
+          <p>Thiago Eric do Nascimento Lima</p>
+          <p>Vinícius Magalhães de Oliveira</p>
+        </div>
+      <!-- Final da seção sobre a equipe -->
+      </div>
+
+
+
+  <!-- Fim do conteúdo da página -->
+    </div>
+
+  </body>
+</html>
